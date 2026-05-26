@@ -1,16 +1,105 @@
-# React + Vite
+# DailyXP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação gamificada de hábitos desenvolvida com React + Vite.
 
-Currently, two official plugins are available:
+O projeto foi criado com foco em praticar fundamentos modernos de Front-End, componentização e gerenciamento de estado em React, mantendo uma arquitetura simples e explicável.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Deploy
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://phel-lip.github.io/dailyxp/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Preview
+
+![Preview do DailyXP](./dailyxp.png)
+
+---
+
+## Funcionalidades
+
+- Criar hábitos
+- Remover hábitos
+- Sistema de progresso (0%, 50%, 100%)
+- Barra de progresso dinâmica
+- Sistema de XP
+- Recompensas desbloqueáveis
+- Histórico semanal visual
+- Streak diária
+- Persistência com localStorage
+- Reset de progresso
+- Reset de recompensa
+- Interface responsiva
+- Micro animações com CSS
+
+---
+
+## Tecnologias Utilizadas
+
+- React
+- JavaScript
+- Vite
+- CSS3
+- localStorage
+- Git
+- GitHub
+- GitHub Pages
+
+---
+
+## Estrutura do Projeto
+
+```txt
+src/
+│
+├── components/
+│   ├── AddHabitForm.jsx
+│   └── HabitCard.jsx
+│
+├── App.jsx
+├── main.jsx
+└── style.css
+```
+
+---
+
+## Objetivo do Projeto
+
+O DailyXP foi desenvolvido para praticar:
+
+Componentização em React
+Manipulação de estado com useState
+Persistência de dados com localStorage
+Renderização dinâmica
+Estruturação de aplicações Front-End
+Organização de código
+Experiência do usuário
+
+---
+
+## Aprendizados
+
+Durante o desenvolvimento deste projeto foram praticados conceitos como:
+
+Props
+Hooks
+Eventos no React
+Manipulação de arrays
+Condicionais dinâmicas
+Deploy no GitHub Pages
+Arquitetura simples para aplicações React
+
+
+---
+
+## Autor
+
+Thasso Holanda
+
+GitHub:
+https://github.com/Phel-lip
+
+LinkedIn:
+https://linkedin.com/in/thassoholanda

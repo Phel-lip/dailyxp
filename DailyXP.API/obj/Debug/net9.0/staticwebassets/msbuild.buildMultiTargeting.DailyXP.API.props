@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DailyXP.API.props" />
+</Project>

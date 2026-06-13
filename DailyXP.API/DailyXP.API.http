@@ -1,0 +1,6 @@
+@DailyXP.API_HostAddress = http://localhost:5271
+
+GET {{DailyXP.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

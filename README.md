@@ -12,87 +12,38 @@ https://phel-lip.github.io/dailyxp/
 
 ---
 
-## Preview
+# DailyXP
 
-![Preview do DailyXP](./dailyxp.png)
+Aplicação Full Stack de acompanhamento de hábitos gamificados.
 
----
+## Tecnologias
+
+### Frontend
+- React
+- Vite
+- JavaScript
+- CSS
+
+### Backend
+- ASP.NET Core Web API
+- Entity Framework Core
+- PostgreSQL
 
 ## Funcionalidades
 
 - Criar hábitos
-- Remover hábitos
-- Sistema de progresso (0%, 50%, 100%)
-- Barra de progresso dinâmica
+- Atualizar progresso
+- Excluir hábitos
 - Sistema de XP
-- Recompensas desbloqueáveis
-- Histórico semanal visual
-- Streak diária
-- Persistência com localStorage
-- Reset de progresso
-- Reset de recompensa
-- Interface responsiva
-- Micro animações com CSS
+- Sistema de Streak
+- Recompensas
+- Persistência em PostgreSQL
 
----
+## Estrutura
 
-## Tecnologias Utilizadas
+/backend -> API .NET
 
-- React
-- JavaScript
-- Vite
-- CSS3
-- localStorage
-- Git
-- GitHub
-- GitHub Pages
-
----
-
-## Estrutura do Projeto
-
-```txt
-src/
-│
-├── components/
-│   ├── AddHabitForm.jsx
-│   └── HabitCard.jsx
-│
-├── App.jsx
-├── main.jsx
-└── style.css
-```
-
----
-
-## Objetivo do Projeto
-
-O DailyXP foi desenvolvido para praticar:
-
-Componentização em React
-Manipulação de estado com useState
-Persistência de dados com localStorage
-Renderização dinâmica
-Estruturação de aplicações Front-End
-Organização de código
-Experiência do usuário
-
----
-
-## Aprendizados
-
-Durante o desenvolvimento deste projeto foram praticados conceitos como:
-
-Props
-Hooks
-Eventos no React
-Manipulação de arrays
-Condicionais dinâmicas
-Deploy no GitHub Pages
-Arquitetura simples para aplicações React
-
-
----
+/frontend -> Aplicação React
 
 ## Autor
 

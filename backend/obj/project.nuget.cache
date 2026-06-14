@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J2JsYkCgAFw=",
+  "dgSpecHash": "npFPDusHyik=",
   "success": true,
-  "projectFilePath": "C:\\Users\\thass\\Desktop\\projDailyXP\\DailyXP.API\\DailyXP.API.csproj",
+  "projectFilePath": "c:\\Users\\thass\\Desktop\\projDailyXP\\backend\\DailyXP.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thass\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\thass\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",

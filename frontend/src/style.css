@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  color: #f8fafc;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 100px 20px;
+}
+
+.app {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.xp-box {
+  background: #1e293b;
+
+  padding: 12px 18px;
+
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.xp-box span {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.xp-box strong {
+  font-size: 1.5rem;
+}
+
+.streak-box {
+  background: #1e293b;
+
+  padding: 12px 18px;
+
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.streak-box span {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.streak-box strong {
+  font-size: 1.2rem;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.habit-form {
+  display: flex;
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+.habit-form input {
+  flex: 1;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #1e293b;
+  color: white;
+
+  outline: none;
+
+  transition:
+  border 0.2s,
+  box-shadow 0.2s;
+}
+
+.habit-form input:focus {
+  border: 1px solid #38bdf8;
+
+  box-shadow:
+    0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+.habit-form button {
+  border: none;
+
+  padding: 14px 18px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  background: #38bdf8;
+  color: #020617;
+
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+.habit-form button:hover {
+  transform: scale(1.03);
+}
+
+.reward-section {
+  margin-top: 30px;  
+  margin-bottom: 30px;
+}
+
+.reward-section h2 {
+  margin-bottom: 14px;
+}
+
+.reward-form {
+  display: flex;
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.reward-form input {
+  flex: 1;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #1e293b;
+  color: white;
+
+  outline: none;
+}
+
+.reward-card {
+  background: #1e293b;
+
+  padding: 20px;
+
+  border-radius: 14px;
+
+  border: 2px solid transparent;
+
+  transition: 0.3s;
+}
+
+.reward-label {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.reward-card h3 {
+  margin: 10px 0;
+}
+
+.reward-card p {
+  color: #94a3b8;
+}
+
+.reward-unlocked {
+  border-color: #22c55e;
+
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+  animation: glow 2s infinite;
+}
+
+.reward-status {
+  display: inline-block;
+
+  margin-top: 12px;
+
+  color: #22c55e;
+}
+
+.history-section {
+  margin-top: 30px;
+}
+
+.week-board {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 15px;
+}
+
+.day-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.day-item span {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.day-dot {
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  background: #1e293b;
+
+  transition: 0.3s;
+}
+
+.day-dot.active {
+  background: #22c55e;
+
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+/* =========================
+   LISTA
+========================= */
+
+.habit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.habit-card {
+  background: #1e293b;
+
+  padding: 18px;
+
+  border-radius: 14px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border 0.2s;
+
+  border: 1px solid transparent;
+  animation: fadeIn 0.3s ease;
+}
+
+.habit-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #38bdf8;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.25);
+}
+
+.habit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.habit-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.habit-xp {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.habit-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.complete-btn,
+.delete-btn {
+  border: none;
+
+  padding: 10px 14px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  transition:
+  transform 0.2s,
+  opacity 0.2s;
+}
+
+.complete-btn:hover,
+.delete-btn:hover {
+  transform: scale(1.05);
+}
+
+.complete-btn {
+  background: #22c55e;
+  color: white;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.progress-fill {
+  height: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      #38bdf8,
+      #22c55e
+    );
+
+  transition:
+    width 0.4s ease;
+
+  border-radius: 999px;
+}
+
+.reset-btn {
+  width: 100%;
+
+  margin-top: 30px;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #ef4444;
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+}
+
+.reset-btn:hover {
+  transform: scale(1.02);
+
+  opacity: 0.9;
+}
+
+.reset-reward-btn {
+  margin-top: 16px;
+
+  padding: 10px 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #0f172a;
+  color: #f8fafc;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+}
+
+.reset-reward-btn:hover {
+  transform: scale(1.03);
+
+  opacity: 0.9;
+}
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 600px) {
+
+  .header {
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: flex-start;
+  }
+
+  .habit-form {
+    flex-direction: column;
+  }
+
+  .habit-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .habit-actions {
+    width: 100%;
+  }
+
+  .complete-btn,
+  .delete-btn {
+    flex: 1;
+  }
+}
+
+@keyframes glow {
+
+  0% {
+    box-shadow:
+      0 0 5px rgba(34, 197, 94, 0.2);
+  }
+
+  50% {
+    box-shadow:
+      0 0 20px rgba(34, 197, 94, 0.5);
+  }
+
+  100% {
+    box-shadow:
+      0 0 5px rgba(34, 197, 94, 0.2);
+  }
+
+}
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}

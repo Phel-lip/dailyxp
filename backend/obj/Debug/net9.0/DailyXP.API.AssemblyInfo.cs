@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DailyXP.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6c2bfe596f1fb069779660d722f24f2115922a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87191d91ff2b02d5b6ea5969842b0a2a3672da35")]
 [assembly: System.Reflection.AssemblyProductAttribute("DailyXP.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DailyXP.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

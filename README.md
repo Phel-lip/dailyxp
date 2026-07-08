@@ -20,11 +20,11 @@
 
 **Aplicação**
 
-https://phel-lip.github.io/dailyxp/
+[🌐 Acessar aplicação](https://phel-lip.github.io/dailyxp/)
 
 **API**
 
-https://dailyxp-api.onrender.com/api/Habit
+[🔗 Acessar API](https://dailyxp-api.onrender.com/api/Habit)
 
 ---
 
@@ -195,6 +195,4 @@ Além da implementação da interface, a aplicação demonstra a construção de
 
 **Thasso Holanda**
 
-GitHub
-
-https://github.com/Phel-lip
+GitHub: [Phel-lip](https://github.com/Phel-lip)

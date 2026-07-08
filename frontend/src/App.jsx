@@ -76,7 +76,7 @@ function App() {
     async function loadHabits() {
 
       const response = await fetch(
-        'http://localhost:5271/api/Habit'
+        'https://dailyxp-api.onrender.com/api/Habit'
       )
 
       const data = await response.json()
@@ -92,7 +92,7 @@ function App() {
   async function addHabit(title) {
 
     const response = await fetch(
-      'http://localhost:5271/api/Habit',
+      'https://dailyxp-api.onrender.com/api/Habit',
       {
         method: 'POST',
         headers: {
@@ -187,7 +187,7 @@ function App() {
     )
 
     await fetch(
-      `http://localhost:5271/api/Habit/${id}`,
+      `https://dailyxp-api.onrender.com/api/Habit/${id}`,
       {
         method: 'PUT',
         headers: {
@@ -204,7 +204,7 @@ function App() {
   async function deleteHabit(id) {
 
     await fetch(
-      `http://localhost:5271/api/Habit/${id}`,
+      `https://dailyxp-api.onrender.com/api/Habit/${id}`,
       {
         method: 'DELETE'
       }
@@ -225,7 +225,7 @@ function App() {
     if (!confirmed) return
 
     await fetch(
-      'http://localhost:5271/api/Habit',
+      'https://dailyxp-api.onrender.com/api/Habit',
       {
         method: 'DELETE'
       }

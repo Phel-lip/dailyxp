@@ -1,78 +1,142 @@
 # DailyXP
 
-Aplicação Full Stack desenvolvida para transformar mecânicas de jogos em um sistema de acompanhamento de hábitos.
+> Sistema Full Stack de gamificação de hábitos desenvolvido com React, ASP.NET Core Web API e PostgreSQL.
 
-Este projeto representa o mais completo do meu portfólio até o momento, reunindo Front-End, Back-End e banco de dados em uma arquitetura organizada para criar uma experiência interativa com persistência de dados e regras de negócio.
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-9-512BD4?logo=dotnet)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-4169E1?logo=postgresql)
+![Render](https://img.shields.io/badge/Deploy-Render-46E3B7)
+![GitHub Pages](https://img.shields.io/badge/Frontend-GitHub%20Pages-black)
 
-## Preview
+---
+
+# Preview
 
 ![Preview do projeto](./dailyxp.png)
 
-## Demonstração
+---
 
-Acesse a versão online:
+# 🚀 Demonstração
+
+**Aplicação**
 
 https://phel-lip.github.io/dailyxp/
 
-## Sobre o Projeto
+**API**
 
-O DailyXP foi inspirado em sistemas de progressão presentes em jogos, aplicando conceitos de gamificação ao acompanhamento de hábitos.
+https://dailyxp-api.onrender.com/api/Habit
 
-A aplicação permite criar e gerenciar hábitos, acompanhar o progresso diário e registrar informações de forma persistente utilizando uma API desenvolvida em ASP.NET Core integrada ao PostgreSQL.
+---
 
-Além da construção da interface, o projeto envolveu organização da arquitetura da aplicação, comunicação entre cliente e servidor e implementação de operações CRUD.
+# Sobre o Projeto
 
-## Funcionalidades
+O **DailyXP** é uma aplicação Full Stack inspirada em sistemas de progressão presentes em jogos, utilizando conceitos de gamificação para transformar hábitos em uma experiência interativa.
+
+O projeto foi desenvolvido utilizando **React** no Front-End, **ASP.NET Core Web API** no Back-End e **PostgreSQL** como banco de dados, permitindo comunicação entre cliente e servidor através de uma API REST.
+
+Além da implementação da interface, o projeto demonstra organização em camadas, persistência de dados, arquitetura cliente-servidor e integração completa entre Front-End, Back-End e banco de dados.
+
+---
+
+# Arquitetura
+
+```text
+React (Frontend)
+        │
+        ▼
+ASP.NET Core Web API
+        │
+        ▼
+Entity Framework Core
+        │
+        ▼
+PostgreSQL (Neon)
+```
+
+---
+
+# Funcionalidades
 
 - Cadastro de hábitos
-- Atualização de progresso
+- Atualização de progresso em três níveis (0%, 50% e 100%)
 - Exclusão de hábitos
-- Sistema de XP
-- Sistema de sequência (Streak)
-- Sistema de recompensas
+- Sistema de XP baseado no progresso dos hábitos
+- Sistema de sequência diária (Streak)
+- Histórico semanal
+- Sistema de recompensas desbloqueáveis
 - Persistência de dados em PostgreSQL
-- Comunicação entre Front-End e Back-End por meio de API REST
+- API REST desenvolvida em ASP.NET Core
+- Integração completa entre Front-End e Back-End
 
-## Tecnologias Utilizadas
+---
 
-### Front-End
+# Tecnologias Utilizadas
+
+## Front-End
 
 - React
 - Vite
-- CSS
+- CSS3
 
-### Back-End
+## Back-End
 
 - ASP.NET Core Web API
 - Entity Framework Core
+- REST API
 
-### Banco de Dados
+## Banco de Dados
 
 - PostgreSQL
+- Neon
 
-## Estrutura do Projeto
+## Deploy
+
+- GitHub Pages
+- Render
+
+## Versionamento
+
+- Git
+- GitHub
+
+---
+
+# Estrutura do Projeto
 
 ```text
 dailyxp/
 
-├── frontend/ → Interface da aplicação em React
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── vite.config.js
+│
 ├── backend/
-│   ├── Controllers/ → Endpoints da API
-│   ├── Models/ → Modelos de dados
-│   ├── Data/ → Contexto do banco de dados
-│   ├── Migrations/ → Controle de versões do banco
-│   └── Program.cs → Configuração da aplicação
+│   ├── Controllers/
+│   ├── Data/
+│   ├── Models/
+│   ├── Migrations/
+│   ├── Program.cs
+│   └── AppDbContext.cs
+│
+└── README.md
 ```
 
-## Como Executar Localmente
+---
 
-### Clone o repositório
+# Como Executar Localmente
+
+## Clone o repositório
 
 ```bash
 git clone https://github.com/Phel-lip/dailyxp.git
+
+cd dailyxp
 ```
 
-### Front-End
+---
+
+## Front-End
 
 ```bash
 cd frontend
@@ -82,7 +146,9 @@ npm install
 npm run dev
 ```
 
-### Back-End
+---
+
+## Back-End
 
 ```bash
 cd backend
@@ -94,17 +160,45 @@ dotnet ef database update
 dotnet run
 ```
 
-É necessário possuir uma instância do PostgreSQL configurada e ajustar a connection string no arquivo `appsettings.json`.
+Configure a **Connection String** utilizando **User Secrets** ou variáveis de ambiente antes de executar a API.
 
-## Objetivo
+---
 
-Este projeto consolida minha evolução ao longo do portfólio, reunindo conceitos de desenvolvimento Front-End moderno com integração entre API, banco de dados e regras de negócio.
+# Aprendizados
 
-Além da implementação da interface, a aplicação demonstra organização em camadas, comunicação cliente-servidor e persistência de dados utilizando tecnologias amplamente adotadas no desenvolvimento web.
+Durante o desenvolvimento deste projeto foram aplicados conceitos como:
 
-## Autor
+- Desenvolvimento Full Stack
+- Consumo de APIs REST
+- CRUD completo
+- Entity Framework Core
+- Migrations
+- PostgreSQL
+- Integração entre Front-End e Back-End
+- Persistência de dados
+- Deploy utilizando GitHub Pages e Render
+- Configuração de variáveis de ambiente
+- Organização de arquitetura em camadas
+- Versionamento utilizando Git e GitHub
 
-Thasso Holanda
+---
 
-GitHub:
+# Objetivo
+
+Este projeto foi desenvolvido para consolidar conhecimentos em desenvolvimento Full Stack, aplicando conceitos modernos de arquitetura cliente-servidor, persistência de dados, integração entre aplicações e boas práticas de desenvolvimento.
+
+Além da implementação da interface, a aplicação demonstra a construção de uma API REST, comunicação entre cliente e servidor, gerenciamento de banco de dados relacional e deploy de uma aplicação completa em ambiente de produção.
+
+---
+
+# Autor
+
+**Thasso Holanda**
+
+GitHub
+
 https://github.com/Phel-lip
+
+LinkedIn
+
+(Adicione seu LinkedIn aqui)

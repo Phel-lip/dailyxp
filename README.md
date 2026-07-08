@@ -198,7 +198,3 @@ Além da implementação da interface, a aplicação demonstra a construção de
 GitHub
 
 https://github.com/Phel-lip
-
-LinkedIn
-
-(Adicione seu LinkedIn aqui)

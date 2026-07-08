@@ -10,7 +10,7 @@ public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
         var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
 
         optionsBuilder.UseNpgsql(
-            "Host=localhost;Port=5432;Database=dailyxp;Username=postgres;Password=ttpd@0023"
+            "Host=ep-curly-paper-acl3mocd-pooler.sa-east-1.aws.neon.tech;Database=neondb;Username=neondb_owner;Password=npg_cmF9BIyf7ZtX;SSL Mode=VerifyFull;Channel Binding=Require;"
         );
 
         return new AppDbContext(optionsBuilder.Options);

@@ -106,8 +106,8 @@ body {
   outline: none;
 
   transition:
-  border 0.2s,
-  box-shadow 0.2s;
+    border 0.2s,
+    box-shadow 0.2s;
 }
 
 .habit-form input:focus {
@@ -139,7 +139,7 @@ body {
 }
 
 .reward-section {
-  margin-top: 30px;  
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -289,7 +289,7 @@ body {
   border-color: #38bdf8;
 
   box-shadow:
-    0 10px 25px rgba(0,0,0,0.25);
+    0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .habit-info {
@@ -326,8 +326,8 @@ body {
   font-weight: bold;
 
   transition:
-  transform 0.2s,
-  opacity 0.2s;
+    transform 0.2s,
+    opacity 0.2s;
 }
 
 .complete-btn:hover,
@@ -354,11 +354,9 @@ body {
   height: 100%;
 
   background:
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       #38bdf8,
-      #22c55e
-    );
+      #22c55e);
 
   transition:
     width 0.4s ease;
@@ -417,6 +415,7 @@ body {
 
   opacity: 0.9;
 }
+
 /* =========================
    RESPONSIVO
 ========================= */
@@ -424,8 +423,9 @@ body {
 @media (max-width: 600px) {
 
   .header {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
 
     align-items: flex-start;
   }
@@ -448,6 +448,18 @@ body {
   .delete-btn {
     flex: 1;
   }
+
+  .reward-form {
+    flex-direction: column;
+    gap: 12px;
+    flex-wrap: nowrap;
+  }
+
+  .week-board {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }
 
 @keyframes glow {

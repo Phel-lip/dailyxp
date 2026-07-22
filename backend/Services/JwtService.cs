@@ -8,7 +8,8 @@ namespace DailyXP.API.Services;
 
 public class JwtService
 {
-    private const string SecretKey = "dailyxp-super-secret-key-2026";
+    private const string SecretKey =
+    "dailyxp-super-secret-key-2026-very-secure!";
 
     public string GenerateToken(User user)
     {

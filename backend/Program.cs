@@ -27,7 +27,8 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<JwtService>();
 
-var key = Encoding.UTF8.GetBytes("dailyxp-super-secret-key-2026");
+var key = Encoding.UTF8.GetBytes(
+    "dailyxp-super-secret-key-2026-very-secure!");
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -68,7 +69,7 @@ var summaries = new[]
 
 app.MapGet("/weatherforecast", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
+    var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

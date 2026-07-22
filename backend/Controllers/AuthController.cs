@@ -20,12 +20,17 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("register")]
-    public async Task<IActionResult> Register(User user)
+    public async Task<IActionResult> Register(RegisterRequest request)
     {
-        if (await _context.Users.AnyAsync(u => u.Email == user.Email))
+        if (await _context.Users.AnyAsync(u => u.Email == request.Email))
             return BadRequest("Email já cadastrado.");
 
-        user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
+        var user = new User
+        {
+            Name = request.Name,
+            Email = request.Email,
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password)
+        };
 
         _context.Users.Add(user);
         await _context.SaveChangesAsync();

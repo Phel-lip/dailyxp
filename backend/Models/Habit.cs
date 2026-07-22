@@ -11,4 +11,8 @@ public class Habit
     public int Progress { get; set; } = 0;
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+    public int UserId { get; set; }
+
+    public User? User { get; set; }
 }

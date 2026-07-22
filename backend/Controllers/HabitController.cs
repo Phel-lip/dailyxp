@@ -21,8 +21,7 @@ public class HabitController : ControllerBase
     [HttpGet]
     public IActionResult GetHabits()
     {
-        var userId = int.Parse(
-            User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
 
         var habits = _context.Habits
             .Where(h => h.UserId == userId)
@@ -34,11 +33,9 @@ public class HabitController : ControllerBase
     [HttpPost]
     public IActionResult CreateHabit(Habit habit)
     {
-        var userId = int.Parse(
-            User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
 
         habit.UserId = userId;
-        habit.CreatedAt = DateTime.UtcNow;
 
         _context.Habits.Add(habit);
         _context.SaveChanges();

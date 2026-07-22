@@ -10,8 +10,8 @@ public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
         var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
 
         optionsBuilder.UseNpgsql(
-            "Host=ep-curly-paper-acl3mocd-pooler.sa-east-1.aws.neon.tech;Database=neondb;Username=neondb_owner;Password=npg_cmF9BIyf7ZtX;SSL Mode=VerifyFull;Channel Binding=Require;"
-        );
+        "Host=ep-quiet-feather-acpbgwt5-pooler.sa-east-1.aws.neon.tech;Database=neondb;Username=neondb_owner;Password=npg_86YSwVhRtprE;SSL Mode=VerifyFull;Channel Binding=Require;"
+    );
 
         return new AppDbContext(optionsBuilder.Options);
     }

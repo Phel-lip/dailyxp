@@ -1,1 +1,1 @@
-export const API_URL = "http://localhost:5271"
+export const API_URL = "https://dailyxp-api.onrender.com"

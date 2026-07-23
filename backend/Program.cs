@@ -64,10 +64,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseCors("ReactPolicy");
+
 app.UseAuthentication();
 app.UseAuthorization();
-
-app.UseCors("ReactPolicy");
 
 app.MapControllers();
 

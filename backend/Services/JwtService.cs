@@ -8,13 +8,18 @@ namespace DailyXP.API.Services;
 
 public class JwtService
 {
-    private const string SecretKey =
-    "dailyxp-super-secret-key-2026-very-secure!";
+    private readonly string _secretKey;
+
+    public JwtService(IConfiguration configuration)
+    {
+        _secretKey = configuration["JWT_KEY"]
+            ?? throw new Exception("JWT_KEY não configurada.");
+    }
 
     public string GenerateToken(User user)
     {
         var key = new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes(SecretKey));
+            Encoding.UTF8.GetBytes(_secretKey));
 
         var credentials = new SigningCredentials(
             key,
